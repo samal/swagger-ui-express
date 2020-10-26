@@ -157,7 +157,7 @@ var generateHTML = function (swaggerDoc, opts, options, customCss, customfavIcon
   customCss = explorerString + ' ' + customCss || explorerString
   customfavIcon = customfavIcon || false
   customSiteTitle = customSiteTitle || 'Swagger UI'
-  _htmlTplString = _htmlTplString || htmlTplString
+  _htmlTplString = opts.htmlTplString || _htmlTplString || htmlTplString
   _jsTplString = _jsTplString || jsTplString
 
   var favIconString = customfavIcon ? '<link rel="icon" href="' + customfavIcon + '" />' : favIconHtml
